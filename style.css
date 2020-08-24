@@ -79,7 +79,6 @@ img[src="img/logo.png"] {
 nav {
     position: fixed;
     background-color: white;
-    width: 18em;
     height: 100%;
     overflow: scroll;
     top: 5em;
@@ -98,12 +97,24 @@ nav li {
     border-bottom: 1px solid lightgrey;
 }
 
+#collapsed-nav {
+    width: 9em;
+}
+
+#collapsed-nav ul {
+    padding: 0;
+}
+
+#expanded-nav {
+    width: 18em;
+}
+
 #day:first-of-type {
     margin-top: 5em;
 }
 
 #feed {
-    margin: 1em auto 1em auto;
+    margin: 1em auto 1em 20em;
     max-width: 100em;
 }
 
@@ -144,19 +155,28 @@ nav li {
     display: none;
 }
 
+
+
+
 /* Media Queries */
 @media(max-width: 750px) {
     #feed {
         margin: 5em 1em 1em 1em;
     }
-    img[src="img/logo.png"]{
+
+    img[src="img/logo.png"] {
         margin: 0;
     }
-    #search-bar input, #search-bar a {
+
+    #search-bar input,
+    #search-bar a {
         display: none;
     }
 
     #smallSearch {
         display: block;
+    }
+    #collapsed-nav {
+        display: none;
     }
 }
