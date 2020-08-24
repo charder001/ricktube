@@ -28,22 +28,23 @@ img[src="img/hamburger.png"] {
 }
 
 img[src="img/logo.png"] {
-    max-width: 70em;
-    height: 3em;
-    margin-left: 1em;
+
+    height: 4em;
+    margin: 1em 11em 1em 1em;
 }
 
 #search-bar {
-    width: 40em;
-    margin: 0 40em 0 auto;
+    width: 100%;
+    margin: 0 auto 0 auto;
 }
 
 #search-bar input {
     width: 80%;
     max-width: 500px;
-    height: 2em;
+    height: 2.5em;
     margin: 0;
     box-sizing: border-box;
+    border: 1px solid lightgrey;
 }
 
 nav {
