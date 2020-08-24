@@ -13,7 +13,6 @@ header {
     display: flex;
     vertical-align: middle;
     align-items: center;
-    margin-left: 1em;
     background-color: white;
 }
 
@@ -25,17 +24,19 @@ main {
 img[src="img/hamburger.png"] {
     width: 1em;
     height: 1em;
+    margin: 0 .7em 0 1.5em;
 }
 
 img[src="img/logo.png"] {
 
     height: 4em;
-    margin: 1em 11em 1em 1em;
+    margin: 1em 1em 1em 1em;
 }
 
 #search-bar {
     width: 100%;
     margin: 0 auto 0 auto;
+    text-align: center;
 }
 
 #search-bar input {
@@ -47,30 +48,62 @@ img[src="img/logo.png"] {
     border: 1px solid lightgrey;
 }
 
+#search-link {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: .35em;
+    border: 1px solid lightgrey;
+    width: 3em;
+}
+
+#search-img {
+    height: 1em;
+
+}
+
+#top-right-menu {
+    display: flex;
+    margin: 1em;
+}
+
+#top-right-menu a {
+    margin: 1em;
+}
+
+#top-right-menu img {
+    height: 1.2em;
+}
+
 nav {
     position: fixed;
     background-color: white;
     width: 18em;
     height: 100%;
     overflow: scroll;
+    top: 5em;
 }
 
 nav ul {
     list-style: none;
-    
+
 }
 
 nav li {
-    margin:  1.5em;
+    margin: 1.5em;
 }
 
-#subs {
-    border-top: 1px solid lightgrey;
+.nav-box {
+    border-bottom: 1px solid lightgrey;
+}
+
+#day:first-of-type {
+    margin-top: 5em;
 }
 
 #feed {
-    margin: 5em 1em 1em 20em;
-
+    margin: 1em auto 1em auto;
     max-width: 100em;
 }
 
@@ -78,6 +111,7 @@ nav li {
     display: flex;
     flex-flow: wrap;
     border-bottom: 1px solid lightgrey;
+    max-width: 81em;
 }
 
 
@@ -104,4 +138,25 @@ nav li {
 
 .hide {
     display: none;
+}
+
+#smallSearch {
+    display: none;
+}
+
+/* Media Queries */
+@media(max-width: 750px) {
+    #feed {
+        margin: 5em 1em 1em 1em;
+    }
+    img[src="img/logo.png"]{
+        margin: 0;
+    }
+    #search-bar input, #search-bar a {
+        display: none;
+    }
+
+    #smallSearch {
+        display: block;
+    }
 }
