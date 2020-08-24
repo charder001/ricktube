@@ -79,9 +79,9 @@ img[src="img/logo.png"] {
 nav {
     position: fixed;
     background-color: white;
-    height: 100%;
     overflow: scroll;
-    top: 5em;
+    top: 70px;
+    bottom: 0;
 }
 
 nav ul {
@@ -99,15 +99,28 @@ nav li {
 
 #collapsed-nav {
     width: 9em;
+    text-align: center;
 }
 
 #collapsed-nav ul {
     padding: 0;
 }
 
+#collapsed-nav img {
+    display: block;
+    height: 1.3em;
+    margin: 0 auto 0 auto;
+}
+
+#collapsed-nav li {
+    margin: 0em 1em 2em 1em
+}
+
 #expanded-nav {
     width: 18em;
 }
+
+
 
 #day:first-of-type {
     margin-top: 5em;
@@ -176,6 +189,7 @@ nav li {
     #smallSearch {
         display: block;
     }
+
     #collapsed-nav {
         display: none;
     }
